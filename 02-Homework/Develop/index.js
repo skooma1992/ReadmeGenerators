@@ -83,11 +83,19 @@ function init() {
             
             
                 });
-                fs.appendFile("readme.md"), ()
-    
+               let badge = "[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)";
+                fs.appendFile("readme.md", '\n' + badge, function(err){
+                    if (err) {
+                        return console.log(err);
+                    }
+                    else{
+                        console.log("goodjob");
+                    }
+                });
+
             })
-}
-    )};
+        });
+    }
 init();
 
 
