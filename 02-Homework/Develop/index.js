@@ -65,6 +65,7 @@ const questions = [
 ];
 
 
+
 function init() {
     promptUser()
     .then(function(questions) {
@@ -82,6 +83,7 @@ function init() {
             
             
                 });
+                fs.appendFile("readme.md"), ()
     
             })
 }
